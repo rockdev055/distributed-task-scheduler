@@ -10,6 +10,7 @@ interface Task {
 export class TaskManager {
   private tasks: Task[] = [];
   private logs: string[] = [];
+  private logs2: string[] = [];
 
   addTask(description: string, time: string, recurring: boolean): Task {
     const task: Task = { id: uuidv4(), description, time, recurring };
