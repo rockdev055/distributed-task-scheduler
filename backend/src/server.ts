@@ -8,6 +8,7 @@ const port = 3001;
 
 app.use(bodyParser.json());
 app.use(cors());
+
 app.use('/tasks', tasksRouter);
 
 app.listen(port, () => {
